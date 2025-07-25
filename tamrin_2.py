@@ -3,30 +3,30 @@ class Person:
         self.name = name
 
 
-# Author class inherits from Person
+
 class Author(Person):
     def __init__(self, name, field):
         super().__init__(name)
         self.field = field
 
 
-# Buyer class inherits from Person
+
 class Buyer(Person):
     def __init__(self, name, email):
         super().__init__(name)
         self.email = email
 
 
-# Publisher class (does not inherit from Person)
+
 class Publisher:
     def __init__(self, name, city):
         self.name = name
         self.city = city
 
 
-# Book class
+
 class Book:
-    total_books = 0  # Class variable to count all books
+    total_books = 0  
 
     def __init__(self, title, price, genre, authors, publisher, buyers):
         self.title = title
